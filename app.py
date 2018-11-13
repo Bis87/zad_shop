@@ -13,8 +13,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True # To allow flask propagating exception even if debug is set to false on app
 app.secret_key = 'zhopa'
-db.init_app(app)
-
 api = Api(app)
 
 jwt = JWT(app, authenticate, identity)
@@ -30,7 +28,6 @@ api.add_resource(ItemsList, '/items')
 api.add_resource(StoreList, '/stores')
 api.add_resource(UserRegister, '/register')
 
-# if __name__ == '__main__':
-
-
-app.run(debug=True)
+if __name__ == '__main__':
+    db.init_app(app)
+    app.run(debug=True)
