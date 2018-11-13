@@ -1,0 +1,10 @@
+2018-09-05 14:13:09,759: ERROR: __main__: Try to divide by zero
+Traceback (most recent call last):
+  File "try_logging.py", line 38, in divide
+    result = x / y
+ZeroDivisionError: division by zero
+2018-09-05 14:15:52,809: ERROR: __main__: Try to divide by zero
+Traceback (most recent call last):
+  File "try_logging.py", line 41, in divide
+    result = x / y
+ZeroDivisionError: division by zero
