@@ -1,0 +1,6 @@
+# root
+# dbf2e103f27927e063c5b54ef2
+
+log in as postgres user
+sudo -i -u postgres
+exit -- to get back to root
